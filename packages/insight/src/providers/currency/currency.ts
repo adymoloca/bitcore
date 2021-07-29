@@ -25,7 +25,7 @@ export class CurrencyProvider {
     }
     if (currency !== 'USD') {
       const chain = chainNetwork.chain.toUpperCase();
-      this.currencySymbol = currency.startsWith('m') ? 'm' + chain : chain;
+      this.currencySymbol = 'FLO';
     } else {
       this.currencySymbol = 'USD';
     }

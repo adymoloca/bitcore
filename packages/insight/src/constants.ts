@@ -1,1 +1,1 @@
-export const UTXO_CHAINS = ['FLO', 'BCH', 'DOGE', 'LTC'];
+export const UTXO_CHAINS = ['FLO'];
