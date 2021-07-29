@@ -48,12 +48,7 @@ class ModuleManager extends BaseModule {
 
   // Chain names -> module paths map
   KNOWN_MODULE_PATHS = {
-    'BTC': './bitcoin',
-    'ETH': './ethereum',
-    'BCH': './bitcoin-cash',
-    'DOGE': './dogecoin',
-    'LTC': './litecoin',
-    'XRP': './ripple'
+    'FLO': './bitcoin',
   };
 
   loadConfigured() {

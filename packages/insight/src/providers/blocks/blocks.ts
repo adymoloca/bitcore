@@ -14,6 +14,7 @@ export interface ApiBlock {
   nextBlockHash: string;
   previousBlockHash: string;
   transactionCount: number;
+  floData: string;
   reward: number;
   minedBy: string;
   time: Date;
@@ -45,6 +46,7 @@ export interface AppBlock {
     length: number;
   };
   txlength: number;
+  floData: string;
   previousblockhash: string;
   nextblockhash: string;
   poolInfo: {
@@ -114,6 +116,7 @@ export class BlocksProvider {
         length: block.transactionCount
       },
       txlength: block.transactionCount,
+      floData: block.floData;
       previousblockhash: block.previousBlockHash,
       nextblockhash: block.nextBlockHash,
       poolInfo: {

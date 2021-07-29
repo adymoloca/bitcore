@@ -4,6 +4,7 @@ export class Block {
   public readonly hash: string;
   public readonly timestamp: number;
   public readonly transactionCount: number;
+  public readonly floData: string;
   public readonly poolName: string;
 
   constructor(properties: InsightBlockObject) {
@@ -12,6 +13,7 @@ export class Block {
     this.hash = properties.hash;
     this.timestamp = properties.time;
     this.transactionCount = properties.txlength;
+    this.floData = properties.floData;
     this.poolName = properties.poolInfo && properties.poolInfo.poolName;
   }
 
@@ -26,6 +28,7 @@ export interface InsightBlockObject {
   hash?: string;
   time?: number;
   txlength?: number;
+  floData: string,
   poolInfo?: {
     poolName?: string;
     url?: string;

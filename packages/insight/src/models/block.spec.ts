@@ -8,6 +8,7 @@ describe('Block', () => {
       hash: '000000000000000001763ebcea127d82b5c49b620960e2d881c4ace719d5fe46',
       time: 1499346191,
       txlength: 1904,
+      floData: '',
       poolInfo: {
         poolName: 'AntMiner',
         url: 'https://bitmaintech.com/'
@@ -21,6 +22,7 @@ describe('Block', () => {
     expect(block.hash).toEqual(obj.hash);
     expect(block.timestamp).toEqual(obj.time);
     expect(block.transactionCount).toEqual(obj.txlength);
+    expect(block.floData).toEqual(obj.floData);
     expect(block.poolName).toEqual(obj.poolInfo.poolName);
   });
 
@@ -31,6 +33,7 @@ describe('Block', () => {
       hash: '000000000000000001763ebcea127d82b5c49b620960e2d881c4ace719d5fe46',
       time: 1499346191,
       txlength: 1904,
+      floData: '',
       poolInfo: {}
     };
 
@@ -41,6 +44,7 @@ describe('Block', () => {
     expect(block.hash).toEqual(obj.hash);
     expect(block.timestamp).toEqual(obj.time);
     expect(block.transactionCount).toEqual(obj.txlength);
+    expect(block.floData).toEqual(obj.floData);
     expect(block.poolName).toEqual(obj.poolInfo.poolName);
   });
 });

@@ -55,6 +55,7 @@ describe('Blocks Provider', () => {
       "length": 1
     },
     "txlength": 1,
+    "floData": "",
     "previousblockhash": "2eae76b2f9ee09171333e1f9d1d85395441b2f2a93e3195787ccf4dca88cc9ca",
     "nextblockhash": "6c3a9505a47edca2aba0764e0c33ab7e720dc9f64f22f61da3d228fe028f134c",
     "poolInfo": {
@@ -76,6 +77,7 @@ describe('Blocks Provider', () => {
       "length": 1
     },
     "txlength": 1,
+    "floData": "",
     "previousblockhash": "24982fc7ec9c45a4240d86441abd14512eeb4fd6c4f3a4ded08c93ae5124ccf9",
     "nextblockhash": "0ac5a5411586fd157bb5ccd60d1d367133ef66bf86d1bd409df636c221c369be",
     "poolInfo": {
@@ -97,6 +99,7 @@ describe('Blocks Provider', () => {
       "length": 1
     },
     "txlength": 1,
+    "floData": "",
     "previousblockhash": "7ee40ebc7674f368178191ccd3cf15003fa7ec7e957d2a6d5b78984059cf4529",
     "nextblockhash": "2eae76b2f9ee09171333e1f9d1d85395441b2f2a93e3195787ccf4dca88cc9ca",
     "poolInfo": {

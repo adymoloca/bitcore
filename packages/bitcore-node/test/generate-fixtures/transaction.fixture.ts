@@ -5,8 +5,8 @@ const transaction =
 
 const bitcoreTx = new bitcore.Transaction(transaction);
 
-const btc = new InternalStateProvider('BTC');
-const rpc = btc.getRPC('BTC', 'regtest');
+const btc = new InternalStateProvider('FLO');
+const rpc = btc.getRPC('FLO', 'regtest');
 
 async function main() {
   let inputs = {};

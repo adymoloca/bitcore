@@ -31,7 +31,7 @@ export class SearchProvider {
       dataIndex: 2,
       type: 'address',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' }
+        { chain: 'FLO', network: 'mainnet' }
       ],
     },
     // Standard BTC / Legacy BCH address
@@ -49,7 +49,7 @@ export class SearchProvider {
       dataIndex: 2,
       type: 'address',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' }
+        { chain: 'FLO', network: 'mainnet' }
       ],
     },
     // Standard BCH Address
@@ -67,7 +67,7 @@ export class SearchProvider {
       dataIndex: 2,
       type: 'address',
       chainNetworks: [
-        { chain: 'BTC', network: 'testnet' },
+        { chain: 'FLO', network: 'testnet' },
         { chain: 'BCH', network: 'testnet' },
         { chain: 'DOGE', network: 'testnet' }
       ],
@@ -104,10 +104,10 @@ export class SearchProvider {
       regexes: [/^[A-Fa-f0-9]{64}$/],
       type: 'blockOrTx',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' },
+        { chain: 'FLO', network: 'mainnet' },
         { chain: 'BCH', network: 'mainnet' },
         { chain: 'DOGE', network: 'mainnet' },
-        { chain: 'BTC', network: 'testnet' },
+        { chain: 'FLO', network: 'testnet' },
         { chain: 'BCH', network: 'testnet' },
         { chain: 'DOGE', network: 'testnet' }
       ],
@@ -126,11 +126,11 @@ export class SearchProvider {
       regexes: [/^[0-9]{1,9}$/],
       type: 'block',
       chainNetworks: [
-        { chain: 'BTC', network: 'mainnet' },
+        { chain: 'FLO', network: 'mainnet' },
         { chain: 'BCH', network: 'mainnet' },
         { chain: 'DOGE', network: 'mainnet' },
         { chain: 'ETH', network: 'mainnet' },
-        { chain: 'BTC', network: 'testnet' },
+        { chain: 'FLO', network: 'testnet' },
         { chain: 'BCH', network: 'testnet' },
         { chain: 'DOGE', network: 'testnet' },
         { chain: 'ETH', network: 'testnet' }

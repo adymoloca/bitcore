@@ -21,8 +21,8 @@ describe('CurrencyProvider', () => {
 
   it('initialises', () => {
     expect(currency).not.toBeNull();
-    expect(currency.defaultCurrency).toBe('BTC');
-    expect(currency.currencySymbol).toBe('BTC');
+    expect(currency.defaultCurrency).toBe('FLO');
+    expect(currency.currencySymbol).toBe('FLO');
     expect(currency.factor).toBe(1);
   });
 
@@ -31,8 +31,8 @@ describe('CurrencyProvider', () => {
     expect(currency.currencySymbol).toBe('USD');
     expect(currency.factor).toEqual(1);
 
-    currency.setCurrency('BTC');
-    expect(currency.currencySymbol).toBe('BTC');
+    currency.setCurrency('FLO');
+    expect(currency.currencySymbol).toBe('FLO');
     expect(currency.factor).toEqual(1);
 
     currency.setCurrency('mBTC');

@@ -9,7 +9,7 @@ import { Event } from '../../src/services/event';
 import { resetDatabase } from '../helpers';
 const { PrivateKey } = require('bitcore-lib');
 
-const chain = 'BTC';
+const chain = 'FLO';
 const network = 'regtest';
 const chainConfig = config.chains[chain][network];
 const creds = chainConfig.rpc;
@@ -160,7 +160,7 @@ describe('Websockets', function() {
 
     const payload = { method: 'socket', url: 'http://localhost:3000/api' };
     const authPayload = { pubKey, message: authClient.getMessage(payload), signature: authClient.sign(payload) };
-    const chain = 'BTC';
+    const chain = 'FLO';
     const network = 'regtest';
     const roomPrefix = `/${chain}/${network}/`;
     socket.emit('room', roomPrefix + 'wallet', authPayload);
@@ -207,7 +207,7 @@ describe('Websockets', function() {
       signature: authClient.sign(payload)
     };
 
-    const chain = 'BTC';
+    const chain = 'FLO';
     const network = 'regtest';
     const roomPrefix = `/${chain}/${network}/`;
     socket.emit('room', roomPrefix + 'wallets', authPayload);
@@ -254,7 +254,7 @@ describe('Websockets', function() {
 
     const payload = { method: 'socket', url: 'http://localhost:3000/api' };
     const authPayload = { pubKey, message: authClient.getMessage(payload), signature: authClient.sign(payload) };
-    const chain = 'BTC';
+    const chain = 'FLO';
     const network = 'regtest';
     const roomPrefix = `/${chain}/${network}/`;
     let failed = new Promise(resolve => {
@@ -274,7 +274,7 @@ describe('Websockets', function() {
 
     const payload = { method: 'socket', url: 'http://localhost:3000/api' };
     const authPayload = { pubKey, message: authClient.getMessage(payload), signature: 'invalid' };
-    const chain = 'BTC';
+    const chain = 'FLO';
     const network = 'regtest';
     const roomPrefix = `/${chain}/${network}/`;
     let failed = new Promise(resolve => {
